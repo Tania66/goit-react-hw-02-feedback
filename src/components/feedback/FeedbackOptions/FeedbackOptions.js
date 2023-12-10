@@ -1,12 +1,11 @@
-import css from '../Style.module.css';
 import React from 'react';
+import { ContainerBtn, Button } from './Options.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div className={css.buttons}>
+    <ContainerBtn>
       {options.map(option => (
-        <button
-          className={css.btn}
+        <Button
           key={option}
           type="button"
           onClick={() => {
@@ -14,9 +13,9 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           }}
         >
           {option}
-        </button>
+        </Button>
       ))}
-    </div>
+    </ContainerBtn>
   );
 };
 

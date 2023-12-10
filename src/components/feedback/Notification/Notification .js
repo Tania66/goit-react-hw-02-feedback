@@ -1,11 +1,11 @@
 import React from 'react';
-import css from '../Style.module.css';
+import { Title } from './Notification.styled';
 
 const Notification = ({ message }) => {
   return (
-    <div className={css.title}>
+    <Title>
       <h3>{message}</h3>
-    </div>
+    </Title>
   );
 };
 

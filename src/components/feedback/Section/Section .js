@@ -1,12 +1,12 @@
 import React from 'react';
-import css from '../Style.module.css';
+import { SectionContainer } from './Section.styled';
 
 const Section = ({ title, children }) => {
   return (
-    <div className={css.section}>
+    <SectionContainer>
       <h2>{title}</h2>
       {children}
-    </div>
+    </SectionContainer>
   );
 };
 
